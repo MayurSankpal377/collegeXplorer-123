@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FDFDFD">
+
+    <!-- College Logo -->
+
+    <!-- Welcome Text -->
+
+
+    <!-- Login Button -->
+    <ImageView
+
+        android:id="@+id/logoImageView"
+        android:layout_width="560dp"
+        android:layout_height="115dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/loginbanner" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#0044CC"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:backgroundTint="#0044CC"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Image of Students -->
+    <ImageView
+        android:id="@+id/studentsImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Students Image"
+        android:src="@drawable/studentimage" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#AEDBFB" /> <!-- Light Blue Background (Trustworthy and professional) -->
+    <corners android:radius="16dp" /> <!-- Rounded corners for a soft and inviting look -->
+</shape>

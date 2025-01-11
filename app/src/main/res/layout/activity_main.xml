@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Main Content Layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar at the top of the page -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#D4D5D7">
+
+            <ImageButton
+                android:layout_marginLeft="10dp"
+                android:id="@+id/menubutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:src="@drawable/baseline_menu_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="CollegeXplorer"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-black"/>
+
+            <ImageButton
+                android:id="@+id/settingbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:padding="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/baseline_settings_24" />
+        </RelativeLayout>
+
+        <!-- ScrollView containing GridLayout with ImageViews -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- GridLayout to hold ImageViews in 2 columns -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:padding="16dp"
+                android:background="@drawable/homebg">
+                <!-- FrameLayouts for 10 categories -->
+
+                <!-- FrameLayout 1 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/engineering" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Engineering"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 2 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/medical" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Medical"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 3 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/management" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Management"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 4 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/law" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Law"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 5 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/agriculture" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Agriculture"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 6 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/hotelmanagement" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Hotel"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 7 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/science" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Science"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 8 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/commerce" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Commerce"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 9 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/art" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Art"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+                <!-- FrameLayout 10 -->
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp">
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/rounded_corners"
+                        android:clipToOutline="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ani" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="bottom"
+                        android:gravity="center"
+                        android:text="Animation"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+
+            </GridLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Navigation Drawer (left) -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/drawer_item"
+        app:headerLayout="@layout/drawer_hedear"
+        android:layout_gravity="start" />
+
+    <!-- Settings Drawer (right) -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/settingsNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/setting_drawer_item"
+        app:headerLayout="@layout/drawer_hedear_setting"
+        android:layout_gravity="end" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

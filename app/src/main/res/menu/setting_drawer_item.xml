@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item
+        android:id="@+id/navhome"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"
+        >
+
+    </item>
+    <item
+            android:id="@+id/navBrightness"
+            android:title="Brightness"
+            android:icon="@drawable/baseline_brightness_6_24"
+
+            >
+
+    </item>
+        <item
+            android:id="@+id/navswitchtheme"
+            android:title="Theme"
+            android:icon="@drawable/baseline_settings_brightness_24"
+            >
+
+        </item>
+
+
+
+        <item
+            android:id="@+id/navRefresh"
+            android:title="Refresh"
+            android:icon="@drawable/baseline_refresh_24"
+            >
+
+        </item>
+
+        <item
+            android:id="@+id/navVersion"
+            android:title="Version"
+            android:icon="@drawable/baseline_version_24"
+            >
+
+        </item>
+
+
+</menu>

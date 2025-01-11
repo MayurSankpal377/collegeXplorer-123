@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#FDFDFD"
+    android:padding="16dp">
+
+    <!-- College Logo -->
+
+    <!-- Welcome Text -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="547dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center"
+        android:contentDescription="Logo"
+
+        android:src="@drawable/loginbanner" />
+
+
+
+
+
+    <!-- Google Icon -->
+    <ImageView
+        android:id="@+id/googleLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/google"
+        android:contentDescription="Google Logo"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Email Input -->
+
+    <!-- Password Input -->
+
+    <!-- Forgot Password Link -->
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#CCCCCC"
+        android:textColorHint="#A99E9E"
+        android:hint="Email Address"
+        android:padding="12dp"
+       />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#CCCCCC"
+
+        android:textColorHint="#A99E9E"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:textSize="14sp"
+        android:textColor="#0000EE"
+        android:layout_gravity="right"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTint="#0044CC"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+
+    <!-- Image of Person using Mobile -->
+    <ImageView
+        android:id="@+id/mobileImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:contentDescription="Person with Mobile"
+        android:src="@drawable/loginimg" />
+
+</LinearLayout>

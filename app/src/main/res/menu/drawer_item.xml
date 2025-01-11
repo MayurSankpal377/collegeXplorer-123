@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:id="@+id/group1">
+    <item
+    android:id="@+id/navhome"
+    android:title="Home"
+    android:icon="@drawable/baseline_home_24"
+
+></item>
+    <item
+        android:id="@+id/navfavorite"
+        android:title="Favorite"
+android:icon="@drawable/baseline_brightness_6_24"
+        ></item></group>
+
+    <group
+        android:id="@+id/group2">
+    <item
+        android:id="@+id/navshare"
+        android:title="Share"
+android:icon="@drawable/baseline_share_24"
+        ></item>
+
+    <item
+        android:id="@+id/navrateus"
+        android:title="Rate Us"
+android:icon="@drawable/baseline_grade_24"
+        ></item></group>
+
+    <item
+        android:id="@+id/navhelp"
+        android:title="Help"
+android:icon="@drawable/baseline_live_help_24"
+        ></item>
+
+    <item
+        android:id="@+id/navprivacy"
+        android:title="Privacy"
+android:icon="@drawable/baseline_privacy_tip_24"
+        ></item>
+
+    <item
+        android:id="@+id/navcontactus"
+        android:title="Contact Us"
+android:icon="@drawable/baseline_contacts_24"
+        ></item>
+
+
+    <item
+        android:id="@+id/navlogout"
+        android:title="Logout"
+android:icon="@drawable/baseline_logout_24"
+        ></item>
+</menu>

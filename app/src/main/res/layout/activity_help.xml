@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".help"
+    android:id="@+id/activity_help"
+    android:background="@drawable/bg1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#D4D5D7">
+
+        <ImageView
+            android:id="@+id/arrowIcon"
+ android:layout_marginLeft="10dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="-10dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Back Arrow"
+            android:elevation="2dp"
+            android:paddingEnd="8dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:background="@drawable/formback"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="20dp"
+            android:text="Contact Us"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+
+            android:textSize="16sp"
+            android:text="Please fill this form"
+            android:textColor="@color/black"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/name"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/formback"
+            android:hint="Enter Your Name" />
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:inputType="phone"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/formback"
+            android:hint="Enter Your Mobile no" />
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/formback"
+            android:hint="Enter Message"
+            android:inputType="text"
+            android:padding="60dp" />
+
+        <Button
+
+            android:id="@+id/sendmsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:padding="15dp"
+            android:text="Send Messege"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/viewFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button"
+            android:padding="15dp"
+            android:text="View Feedback"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0">
+    </TextView>
+</LinearLayout>
+
+
+
+
+
+

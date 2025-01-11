@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SMS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".firestore"
+            android:exported="false" />
+        <activity
+            android:name=".AdminChangeImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".privacy"
+            android:exported="false" />
+        <activity
+            android:name=".view_feedback_of_help"
+            android:exported="false" />
+        <activity
+            android:name=".help"
+            android:exported="false" />
+        <activity
+            android:name=".Animation.Animation"
+            android:exported="false" />
+        <activity
+            android:name=".Art.Art"
+            android:exported="false" />
+        <activity
+            android:name=".Commerce.Commerce"
+            android:exported="false" />
+        <activity
+            android:name=".Science.Science"
+            android:exported="false" />
+        <activity
+            android:name=".Hotel.Hotel"
+            android:exported="false" />
+        <activity
+            android:name=".Agriculture.Agriculture"
+            android:exported="false" />
+        <activity
+            android:name=".Law.Law"
+            android:exported="false" />
+        <activity
+            android:name=".Management.Management"
+            android:exported="false" />
+        <activity
+            android:name=".Medical.Medical"
+            android:exported="false" />
+        <activity
+            android:name=".Engineering.iit_bombay_college"
+            android:exported="false" />
+        <activity
+            android:name=".Login.loginpage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".setThemes"
+            android:exported="false" />
+        <activity
+            android:name=".Login.forgotpasswordaa"
+            android:exported="true" />
+        <activity
+            android:name=".Login.usersignup"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.userlogin"
+            android:exported="false" />
+        <activity
+            android:name=".Engineering.Engineering"
+            android:exported="false" />
+    </application>
+
+</manifest>
