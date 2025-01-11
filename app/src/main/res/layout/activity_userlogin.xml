@@ -27,7 +27,7 @@
     <!-- Google Icon -->
     <ImageView
         android:id="@+id/googleLogo"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="50dp"
         android:src="@drawable/google"
         android:contentDescription="Google Logo"
@@ -43,9 +43,11 @@
         android:id="@+id/emailInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#CCCCCC"
-        android:textColorHint="#A99E9E"
+        android:layout_marginBottom="10dp"
+
+        android:textColorHint="#0F0E0E"
         android:hint="Email Address"
         android:padding="12dp"
        />
@@ -55,7 +57,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:backgroundTint="#CCCCCC"
+
+        android:background="@drawable/button"
 
         android:textColorHint="#A99E9E"
         android:hint="Password"
@@ -77,7 +80,7 @@
     <Button
         android:id="@+id/loginButton"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="Login"
         android:backgroundTint="#0044CC"
         android:textColor="#FFFFFF"

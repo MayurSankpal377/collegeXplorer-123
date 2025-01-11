@@ -2,12 +2,12 @@
 <shape
     xmlns:android="http://schemas.android.com/apk/res/android">
 <gradient
-    android:startColor="#91A1FA"
-    android:endColor="#F3EFC265">
+    android:startColor="#F8FAFB"
+    android:endColor="#2841C8">
 
 </gradient>
     <stroke
-        android:color="#AC6781"
+        android:color="#123EDB"
         android:width="2dp">
 
     </stroke>
